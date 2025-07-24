@@ -2,6 +2,8 @@ import { HttpStatus } from "@/constants/http-status";
 import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 
+// Explicitly set runtime to nodejs to prevent automatic edge runtime detection
+export const runtime = 'nodejs';
 
 
 export async function POST(req: NextRequest) {

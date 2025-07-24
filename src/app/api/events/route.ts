@@ -9,6 +9,9 @@ import { NextRequest, NextResponse } from "next/server";
 import zod from "zod";
 import { insertTrackingRecord } from "./insert-tracking-record";
 
+// Explicitly set runtime to nodejs to prevent automatic edge runtime detection
+export const runtime = 'nodejs';
+
 const eventBodySchema = zod.object({
   events: zod
     .array(
