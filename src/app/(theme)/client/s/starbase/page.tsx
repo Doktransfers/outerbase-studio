@@ -20,7 +20,7 @@ import { useAvailableAIAgents } from "@/lib/ai-agent-storage";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-export const runtime = "edge";
+
 
 function StarbasePageBody() {
   const params = useSearchParams();

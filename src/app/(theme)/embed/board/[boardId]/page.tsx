@@ -8,7 +8,7 @@ interface EmbedBoardPageProps {
   searchParams: Promise<{ key: string; theme: string }>;
 }
 
-export const runtime = "edge";
+
 
 export default async function EmbedBoardPage(props: EmbedBoardPageProps) {
   const searchParams = await props.searchParams;

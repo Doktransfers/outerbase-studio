@@ -4,7 +4,7 @@
 
 import { redirect } from "next/navigation";
 
-export const runtime = "edge";
+
 
 export const GET = function () {
   return redirect("/local");

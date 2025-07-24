@@ -2,7 +2,7 @@
 import NavigationHeader from "@/app/(outerbase)/nav-header";
 import NavigationLayout from "@/app/(outerbase)/nav-layout";
 
-export const runtime = "edge";
+
 
 export default function WorkspaceBillingPage() {
   return (

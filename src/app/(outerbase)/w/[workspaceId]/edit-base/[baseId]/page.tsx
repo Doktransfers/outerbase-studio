@@ -21,7 +21,7 @@ import { ArrowLeft, ArrowRight, FloppyDisk } from "@phosphor-icons/react";
 import { useParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-export const runtime = "edge";
+
 
 function WorkspaceEditBaseBody({
   base,
@@ -50,7 +50,7 @@ function WorkspaceEditBaseBody({
     {}
   );
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   const onSave = useCallback(
     (overrideRedirect?: string) => {

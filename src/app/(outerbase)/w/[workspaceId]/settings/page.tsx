@@ -6,7 +6,7 @@ import { Loader } from "@/components/orbit/loader";
 import WorkspaceDeleteSection from "./delete";
 import WorkspaceDetailSection from "./detail";
 
-export const runtime = "edge";
+
 
 export default function WorkspaceBillingPage() {
   const { currentWorkspace } = useWorkspaces();

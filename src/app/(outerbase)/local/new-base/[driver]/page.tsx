@@ -14,7 +14,7 @@ import { useCallback, useMemo, useState } from "react";
 import { mutate } from "swr";
 import { createLocalConnection } from "../../hooks";
 
-export const runtime = "edge";
+
 
 export default function LocalNewBasePage() {
   const { driver } = useParams<{ driver: string }>();
@@ -27,7 +27,7 @@ export default function LocalNewBasePage() {
       starbase_type: searchParams.get("type") ?? "internal"
     } : {}),
     token: searchParams.get("access-key") ?? ""
-   });
+  });
   const [loading, setLoading] = useState(false);
   const [validateErrors, setValidateErrors] = useState<Record<string, string>>(
     {}

@@ -15,7 +15,7 @@ import { useParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import useSWR, { KeyedMutator } from "swr";
 
-export const runtime = "edge";
+
 
 function BoardPageEditor({
   initialValue,
